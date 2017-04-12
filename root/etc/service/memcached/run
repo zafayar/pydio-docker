@@ -1,0 +1,4 @@
+#!/bin/sh
+# `/sbin/setuser memcache` runs the given command as the user `memcache`.
+# If you omit that part, the command will be run as root.
+exec /sbin/setuser abc /usr/bin/memcached -p 11211 -m 256 -c 1024 -t 4 >>/log/memcached.log 2>&1

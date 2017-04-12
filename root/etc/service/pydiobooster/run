@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /usr/local/bin/pydio -conf /data/booster/pydioconf.conf >>/log/pydiobooster.log 2>&1
