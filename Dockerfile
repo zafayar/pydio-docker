@@ -1,11 +1,10 @@
-FROM phusion/baseimage:0.9.21
+FROM phusion/baseimage:0.9.22
 MAINTAINER N Panchal <zafayar@hotmail.com>
 
-ENV PYDIO_VERSION="7.0.4"
-ENV PYDIO_BOOSTER_VER="1.0.2"
+ENV PYDIO_VERSION="8.0.0"
+ENV PYDIO_BOOSTER_VER="1.2.0"
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Use baseimage-docker's init system.
 CMD ["/sbin/my_init"]
 
 
@@ -26,7 +25,7 @@ RUN add-apt-repository ppa:ondrej/php -y -u && \
 	php7.0-gd \
 	php7.0-gettext \
 	php7.0-iconv \
-#	php7.0-imagick \
+	php7.0-imagick \
 	php7.0-imap \
 	php7.0-intl \
 	php7.0-json \
@@ -36,12 +35,8 @@ RUN add-apt-repository ppa:ondrej/php -y -u && \
 	php7.0-memcached \
 	php7.0-mysqlnd \
 	php7.0-opcache \
-#	php7.0-openssl \
-#	php7.0-pear-mail_mime \
 	php7.0-pgsql \
 	php7.0-pspell \
-#	php7.0-session \
-#	php7.0-snmp \
 	php7.0-sqlite3 \
 	php7.0-ssh2 \
 	php7.0-xml \

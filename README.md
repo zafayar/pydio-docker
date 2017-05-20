@@ -2,7 +2,7 @@
 
 **This is work in progress and not ready for production use.  Feedback is welcome.**
 
-This repository contains Docker file for Pydio 7, build using Docker's automated build system.
+This repository contains Docker file for Pydio 8, build using Docker's automated build system.
 
 ## Base Image
 [phusion/baseimage:0.9.21](http://phusion.github.io/baseimage-docker/)
