@@ -27,8 +27,8 @@ Run using
 
 ```
 	docker run 
-		-rm 
-		-name pydio 
+		--rm 
+		--name pydio 
 		-e PGID=<Group id> 
 		-e PUID=<User id> 
 		-v <logfolder>:/log 
